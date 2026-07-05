@@ -26,6 +26,5 @@ function buildOrder() {
 
 function checkout() {
   var order = buildOrder();
-  if (!order) return;
   document.getElementById('total').textContent = 'Order total: $' + order.total.toFixed(2);
 }
