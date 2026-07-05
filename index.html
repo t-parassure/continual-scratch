@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Scratch Demo Shop</title>
+  <style>
+    body { font-family: system-ui, sans-serif; max-width: 34rem; margin: 3rem auto; color: #1a1a2e; }
+    button { background: #6c3bf4; color: #fff; border: 0; padding: .6rem 1.2rem; border-radius: 8px; font-size: 1rem; cursor: pointer; }
+    .item { display: flex; justify-content: space-between; padding: .5rem 0; border-bottom: 1px solid #eee; }
+  </style>
+</head>
+<body>
+  <h1>Scratch Demo Shop</h1>
+  <p>A tiny demo storefront. Add items, then check out.</p>
+  <div id="items"></div>
+  <p><button onclick="addItem()">Add an item</button> <button onclick="checkout()">Checkout</button></p>
+  <p id="total"></p>
+  <script src="app.js"></script>
+  <script src="https://app.glueview.com/widget.js" data-key="pk_dev_7a2468ba1e5f658ad8c6453bdca8dac4b90156a9adc4631d" async></script>
+</body>
+</html>
