@@ -15,6 +15,7 @@ function addItem() {
 function render() {
   var el = document.getElementById('items');
   el.innerHTML = cart.map(function (i) {
+    if (!i) return '';
     return '<div class="item"><span>' + i.name + '</span><span>$' + i.price.toFixed(2) + '</span></div>';
   }).join('');
 }
@@ -26,5 +27,7 @@ function buildOrder() {
 
 function checkout() {
   var order = buildOrder();
-  document.getElementById('total').textContent = 'Order total: $' + order.total.toFixed(2);
+  if (order) {
+    document.getElementById('total').textContent = 'Order total: $' + order.total.toFixed(2);
+  }
 }
