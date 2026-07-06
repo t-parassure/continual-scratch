@@ -26,5 +26,9 @@ function buildOrder() {
 
 function checkout() {
   var order = buildOrder();
+  if (!order) {
+    document.getElementById('total').textContent = 'Order total: —';
+    return;
+  }
   document.getElementById('total').textContent = 'Order total: $' + order.total.toFixed(2);
 }
