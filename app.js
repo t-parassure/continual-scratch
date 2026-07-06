@@ -27,7 +27,7 @@ function buildOrder() {
 function checkout() {
   var order = buildOrder();
   if (!order) {
-    document.getElementById('total').textContent = 'Order total: —';
+    document.getElementById('total').textContent = 'Cart is empty';
     return;
   }
   document.getElementById('total').textContent = 'Order total: $' + order.total.toFixed(2);
