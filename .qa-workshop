@@ -1,0 +1,10 @@
+continual-trial-suite disposable workshop — force-restored after every run
+
+This repository is a fixture for the Continual pre-release trial suite (qa/lanes/workshop.mjs).
+A `--workshop` run pushes a known tree onto the default branch, drives the real
+fix pipeline against it (draft, dep-bump, widget install, tune-up, merge), then
+closes every PR it opened, deletes every branch it created, and force-restores
+the default branch to the commit it started from.
+
+Do not keep work here. Removing this file makes the suite refuse to touch the
+repository at all.
