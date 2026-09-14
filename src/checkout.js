@@ -19,6 +19,7 @@ function findItem(cart, sku) {
 
 function priceFor(cart, sku) {
   const line = findItem(cart, sku);
+  if (!line) return 0;
   return line.price * line.qty;
 }
 
