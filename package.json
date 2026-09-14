@@ -1,8 +1,13 @@
 {
-  "name": "continual-scratch",
-  "version": "1.0.0",
+  "name": "zzz-qatrial-workshop",
+  "version": "0.1.0",
   "private": true,
+  "description": "Disposable fixture app for the Continual trial suite's workshop lane. Not a product.",
+  "scripts": {
+    "build": "node -e \"console.log('build ok')\"",
+    "start": "node src/server.js"
+  },
   "dependencies": {
-    "@supabase/supabase-js": "2.45.4"
+    "minimist": "1.2.5"
   }
 }
