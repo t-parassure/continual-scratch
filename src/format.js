@@ -10,7 +10,8 @@
 // Nothing here is a product. The whole tree is force-restored after each run.
 
 function greetingFor(user) {
-  return `Hello, ${user.profile.name}`;
+  const name = user.profile ? user.profile.name : 'there';
+  return `Hello, ${name}`;
 }
 
 module.exports = { greetingFor };
