@@ -1,16 +1,19 @@
-<!doctype html><html><head><title>Fake app</title></head><body>
-<div id="login">
-  <h1>Sign in</h1>
-  <form id="f"><input type="email" id="u" placeholder="email"><input type="password" id="p" placeholder="password"><button type="submit">Sign in</button></form>
-</div>
-<div id="app" style="display:none"><h1>Dashboard</h1><p>Welcome, signed-in user. Revenue: $12,345</p></div>
-<script>
-document.getElementById('f').addEventListener('submit', function(e){
-  e.preventDefault();
-  if (document.getElementById('u').value === 'test@x.com' && document.getElementById('p').value === 'hunter2') {
-    document.getElementById('login').remove();
-    document.getElementById('app').style.display = 'block';
-  }
-});
-</script>
-</body></html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>zzz-qatrial workshop</title>
+  </head>
+  <body>
+    <main>
+      <h1>zzz-qatrial workshop</h1>
+      <p>
+        Disposable fixture for the Continual pre-release trial suite. Every run
+        force-restores this repository to the commit it started from.
+      </p>
+      <button id="checkout">Check out</button>
+    </main>
+    <script src="src/checkout.js"></script>
+  </body>
+</html>
